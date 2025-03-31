@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta 2025</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="museos.html">Museos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Encuesta - 2025</h1>
+        <p>Este formulario tiene fines educativos y prácticos para recopilar datos de una persona y almacenarlos para su evaluación.</p>
+
+        <form>
+            <div class="campo">
+                <label for="email">📧 Email:</label>
+                <input required type="email" id="email" name="email" placeholder="Ingrese su correo">
+            </div>
+
+            <div class="campo">
+                <label for="username">👤 Nombre:</label>
+                <input required minlength="5" type="text" id="username" name="username" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="campo">
+                <label for="surname">🔤 Apellido:</label>
+                <input required minlength="6" type="text" id="surname" name="surname" placeholder="Ingrese su apellido">
+            </div>
+
+            <div class="campo">
+                <label for="dni">📄 DNI:</label>
+                <input required minlength="8" type="text" id="dni" name="dni" placeholder="Ingrese su DNI">
+            </div>
+
+            <div class="campo">
+                <label for="date">📅 Fecha de Nacimiento:</label>
+                <input required type="date" id="date" name="date">
+            </div>
+
+            <div class="campo">
+                <h3>🏛 ¿En qué universidad estás estudiando?</h3>
+                <label><input type="radio" name="universidad" value="UNJU"> UNJU (Universidad Nacional de Jujuy)</label><br>
+                <label><input type="radio" name="universidad" value="UNSA"> UNSA (Universidad Nacional de Salta)</label><br>
+                <label><input type="radio" name="universidad" value="UCSA"> UCSA (Universidad Católica de Santiago del Estero)</label><br>
+                <label><input type="radio" name="universidad" value="UBA"> UBA (Universidad de Buenos Aires)</label>
+            </div>
+
+            <div class="campo">
+                <h3>📚 Qué materias estás haciendo?</h3>
+                <label><input type="checkbox" name="materias" value="Algebra"> Álgebra I</label><br>
+                <label><input type="checkbox" name="materias" value="Ingles"> Inglés III</label><br>
+                <label><input type="checkbox" name="materias" value="PV"> Programación Visual</label><br>
+                <label><input type="checkbox" name="materias" value="LSO II"> Laboratorio de Sistemas Operativos II</label><br>
+                <label><input type="checkbox" name="materias" value="BD II"> Base de Datos II</label>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar Encuesta">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
