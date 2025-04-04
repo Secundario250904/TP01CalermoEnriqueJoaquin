@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="Resources/Style/contacto.css">
 </head>
 <body>
+    <script>
+        function enviarFormulario(){
+            event.preventDefault();
+            var apellido=document.getElementById("apellido").value;
+            var nombre=document.getElementById("nombre").value;
+            console.log("Nombre: ",nombre);
+            console.log("Apellido: ",apellido);
 
+            alert("nombre:  "+nombre+" y apellido: "+apellido);
+        }
+    </script>
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
